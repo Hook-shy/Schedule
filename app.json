@@ -1,0 +1,28 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/main/main",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/user_info/user_info",
+        "pages/theme/theme",
+        "pages/course_details/course_details",
+        "pages/score_details/score_details",
+        "pages/setting/setting",
+        "pages/score_query/score_query",
+        "pages/table_manage/table_manage",
+        "pages/feedback/feedback",
+        "pages/about/about",
+        "pages/message/message",
+        "pages/edit_table/edit_table",
+        "pages/edit_course/edit_course"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

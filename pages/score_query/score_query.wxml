@@ -1,0 +1,36 @@
+<!--pages/score_query/score_query.wxml-->
+<view class="body">
+    <view class="card">
+        <view class="row" style="color:{{mainColor}}">
+            <view class="row-item">
+                <view>科目</view>
+                <view>56</view>
+            </view>
+            <view class="row-item">
+                <view>平均</view>
+                <view>72.23</view>
+            </view>
+            <view class="row-item">
+                <view>最高</view>
+                <view>99</view>
+            </view>
+            <view class="row-item">
+                <view>最低</view>
+                <view>61</view>
+            </view>
+        </view>
+    </view>
+    <view class="card">
+        <view class="card-title" style="color:{{mainColor}};border-bottom: 1rpx solid {{mainColor}};">
+            <view class="card-title-left">科目</view>
+            <view class="card-title-right">成绩</view>
+        </view>
+        <view hover-class="item-hover">
+                <view class="item-left">生涯规划</view>
+                <view class="item-right" style="color:gainsboro">
+                    <view style="display:inline-block;margin-right:20rpx">90</view>
+                    <text class="fa fa-angle-right fa-2x ico-gray"></text>
+                </view>
+            </view>
+    </view>
+</view>

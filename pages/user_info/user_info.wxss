@@ -1,0 +1,80 @@
+/* pages/user_info/user_info.wxss */
+.body {
+    background-color: #fafafa;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 0.8em;
+}
+
+.card {
+    margin:40rpx;
+    padding: 20rpx;
+    background-color: white;
+    border-radius: 15rpx;
+    box-shadow: -0 -0 20rpx 2rpx gainsboro;
+}
+
+.user-card{
+    text-align: center;
+    margin-top: 75rpx;
+    height: 220rpx;
+}
+
+.user-img {
+    position: relative;
+    top: -60rpx;
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 60rpx;
+}
+
+.user-nick {
+    position: relative;
+    top: -50rpx;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.user-info {
+    position: relative;
+    top: -30rpx;
+    flex-direction: row;
+}
+
+.user-info-block{
+    display: inline-block;
+    width: 30%;
+}
+
+.user-info-card-title{
+    margin: 25rpx 30rpx;
+    padding-bottom: 5rpx;
+    font-size: 1em;
+}
+
+.user-info-row{
+    margin: 25rpx 30rpx;
+}
+
+.button{
+    margin: 40rpx;
+    height: 80rpx;
+    background-color: white;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 40rpx;
+    color: red;
+    box-shadow: -0 -0 20rpx 2rpx gainsboro;
+}
+
+.button-hover{
+    margin: 40rpx;
+    height: 80rpx;
+    background-color: white;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 40rpx;
+    color: red;
+    box-shadow: -0 -0 20rpx 2rpx gainsboro;
+    background-color: #fafafa;
+}

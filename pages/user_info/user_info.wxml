@@ -1,0 +1,33 @@
+<!--pages/user_info/user_info.wxml-->
+<view class="body">
+    <view class="card user-card">
+        <image class="user-img" src="{{user.img}}"></image>
+        <view class="user-nick">{{user.nick}}</view>
+        <view class="user-info" style="color:{{mainColor}}">
+            <view class="user-info-block">
+                <view>课表</view>
+                <view>3</view>
+            </view>
+            <view class="user-info-block">
+                <view>粉丝</view>
+                <view>5</view>
+            </view>
+            <view class="user-info-block">
+                <view>关注</view>
+                <view>10</view>
+            </view>
+        </view>
+    </view>
+    <view class="card">
+        <view class="user-info-card-title"  style="color:{{mainColor}};border-bottom: 1rpx solid {{mainColor}};">个人信息</view>
+        <view class="user-info-row">姓名：石洪玉</view>
+        <view class="user-info-row">学号：20805002590</view>
+        <view class="user-info-row">班级：信息18-1</view>
+        <view class="user-info-row">专业：信息管理与信息系统</view>
+        <view class="user-info-row">学院：信息学院</view>
+    </view>
+
+    <view class="button" hover-class="button-hover">
+        返回
+    </view>
+</view>

@@ -1,0 +1,258 @@
+/* pages/main/main.wxss */
+.body {
+    background-color: #fafafa;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.status-bar {
+    height: 110rpx;
+}
+
+.tabs {
+    margin: 0 30rpx;
+    flex-direction: row;
+}
+
+.tab {
+    display: inline-block;
+    margin: 5rpx;
+}
+
+.tab-active {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 20rpx;
+}
+
+.line {
+    height: 10rpx;
+    width: 100%;
+    border-radius: 5rpx;
+}
+
+.content {
+    height: calc(100vh - 160rpx);
+    font-size: 0.8em;
+}
+
+.card {
+    margin: 40rpx;
+    padding: 20rpx;
+    background-color: white;
+    border-radius: 15rpx;
+    box-shadow: -0 -0 20rpx 2rpx gainsboro;
+}
+
+.title {
+    margin: 30rpx 40rpx;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.line-box {
+    flex-direction: row;
+    margin-left: 40rpx;
+}
+
+.line-left {
+    display: table-cell;
+}
+
+.point-time {
+    display: inline-block;
+    margin-right: 10rpx;
+}
+
+.point {
+    display: inline-block;
+    width: 26rpx;
+    height: 26rpx;
+    border-radius: 13rpx;
+}
+
+.line-right {
+    display: table-cell;
+}
+
+.card-course-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10rpx;
+}
+
+.card-course-content {
+    font-size: 0.9em;
+}
+
+.row0 {
+    flex-direction: row;
+    background-color: white;
+    margin-top: 20rpx;
+}
+
+.cell-head {
+    width: 93rpx;
+    height: 120rpx;
+    /* border: 1rpx solid gainsboro; */
+}
+
+.table-body {
+    height: calc(100vh - 350rpx);
+}
+
+.row {
+    flex-direction: row;
+}
+
+.row-body {
+    flex-direction: row;
+    height: 180rpx;
+}
+
+.cell {
+    display: table-cell;
+    width: 93rpx;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 45rpx;
+}
+
+.cell-course{
+    font-size: 0.8em;
+}
+
+.cell-time {
+    background-color: white;
+    height: 180rpx;
+    border-top: 1rpx solid gainsboro;
+}
+
+.cell-radius {
+    display: table-cell;
+    width: 86rpx;
+    height: 170rpx;
+    margin: 5rpx 4rpx;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45rpx;
+    color: white;
+    border-radius: 15rpx;
+    box-shadow: -0 -0 10rpx 2rpx gainsboro;
+}
+
+.user-card {
+    margin-top: 50rpx;
+    height: 120rpx;
+}
+
+.user-img {
+    position: relative;
+    left: 30rpx;
+    top: -50rpx;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50rpx;
+}
+
+.user-nick {
+    position: relative;
+    left: 160rpx;
+    top: -110rpx;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.user-info {
+    position: relative;
+    left: 20rpx;
+    top: -70rpx;
+}
+
+.menu-item-hover {
+    background-color: #fafafa;
+    border-radius: 15rpx;
+}
+
+
+.menu-item-left {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 20rpx 0;
+    padding: 0 40rpx;
+}
+
+.menu-item-right {
+    position: absolute;
+    display: inline-block;
+    right: 50rpx;
+    width: 40%;
+    vertical-align: middle;
+    text-align: right;
+    margin: 20rpx 0;
+    padding: 0 20rpx;
+}
+
+.button {
+    margin: 40rpx;
+    height: 80rpx;
+    background-color: white;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 40rpx;
+    color: red;
+    box-shadow: -0 -0 20rpx 2rpx gainsboro;
+}
+
+.button-hover {
+    margin: 40rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 40rpx;
+    color: red;
+    box-shadow: -0 -0 20rpx 2rpx gainsboro;
+    background-color: #fafafa;
+}
+
+.float-button-box {
+    position: fixed;
+    right: 50rpx;
+    bottom: 50rpx;
+}
+
+.float-button-border {
+    display: inline-block;
+    width: 90rpx;
+}
+
+.round-button {
+    display: table-cell;
+    width: 70rpx;
+    height: 70rpx;
+    background-color: white;
+    box-shadow: 0 0 20rpx 2rpx gainsboro;
+    border-radius: 35rpx;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.round-button-hover {
+    display: table-cell;
+    width: 70rpx;
+    height: 70rpx;
+    background-color: #fafafa;
+    box-shadow: 0 0 20rpx 2rpx gainsboro;
+    border-radius: 35rpx;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ico-gray {
+    color: gainsboro;
+}

@@ -1,0 +1,12 @@
+<!--pages/theme/theme.wxml-->
+<view class="body">
+    <view class="item" wx:for="{{theme}}">
+        <view class="card card-item" style="background-color:{{item.color}}">
+            <image class="icon" src="../../imgs/icon_correct.png" wx:if="{{themeIndex==index}}"></image>
+        </view>
+        <view class="info">
+            <text style="color:{{item.color}}">{{item.text}}</text>
+            <text style="font-size:0.8em;color:#aaaaaa">{{item.count}}人使用</text>
+        </view>
+    </view>
+</view>

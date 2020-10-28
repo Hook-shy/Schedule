@@ -1,0 +1,59 @@
+/* pages/login/login.wxss */
+.body{
+    background-color: #83E8C9;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+image{
+    margin-top: calc(50vh - 400rpx);
+    width: 200rpx;
+    height: 200rpx;
+}
+
+.text{
+    color: white;
+    margin-bottom: 200rpx;
+}
+
+input{
+    background-color: white;
+    margin: 30rpx 80rpx;
+    text-align: left;
+    height: 80rpx;
+    border-radius: 40rpx;
+    padding: 0 30rpx;
+    box-shadow: -0 -0 20rpx 2rpx gainsboro;
+}
+
+.button {
+    margin: 40rpx 80rpx;
+    height: 80rpx;
+    background-color: white;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 40rpx;
+    color: #27d09c;
+    box-shadow: -0 -0 20rpx 2rpx gainsboro;
+}
+
+.button-hover {
+    margin: 40rpx 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 40rpx;
+    color: #27d09c;
+    box-shadow: -0 -0 20rpx 2rpx gainsboro;
+    background-color: #fafafa;
+}
+
+.info{
+    position: fixed;
+    bottom: 50rpx;
+    width: 100%;
+    color: white;
+    font-size: 0.7em;
+    text-align: center;
+}

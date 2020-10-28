@@ -1,0 +1,159 @@
+<!--pages/main/main.wxml-->
+<view class="body">
+    <view class="status-bar">
+
+    </view>
+    <view class="tabs">
+        <view class="tab tab-active" wx:if="{{activeTab == 0}}" bindtap="onClickTab" data-index="0">
+            <text>首页</text>
+            <view class="line" style="background-color: {{mainColor}};"></view>
+        </view>
+        <view class="tab" wx:else bindtap="onClickTab" data-index="0">
+            <text>首页</text>
+        </view>
+        <view class="tab tab-active" wx:if="{{activeTab == 1}}" bindtap="onClickTab" data-index="1">
+            <text>课表</text>
+            <view class="line" style="background-color: {{mainColor}};"></view>
+        </view>
+        <view class="tab" wx:else bindtap="onClickTab" data-index="1">
+            <text>课表</text>
+        </view>
+        <view class="tab tab-active" wx:if="{{activeTab == 2}}" bindtap="onClickTab" data-index="2">
+            <text>我的</text>
+            <view class="line" style="background-color: {{mainColor}};"></view>
+        </view>
+        <view class="tab" wx:else bindtap="onClickTab" data-index="2">
+            <text>我的</text>
+        </view>
+    </view>
+
+    <!-- 首页 -->
+    <scroll-view class="content" scroll-y="true" wx:if="{{activeTab == 0}}">
+        <view class="title">
+            <text class="bold">{{date}}</text>
+            {{detail}}
+        </view>
+        <view class="line-box">
+            <view class="line-left">
+                <view>
+                    <view class="point-time">14:30</view>
+                    <view class="point" style="background-color:{{mainColor}}"></view>
+                </view>
+            </view>
+            <view class="line-right">
+                <view class="card" style="margin:10rpx 30rpx">
+                    <view class="card-course-title">Java语言程序设计</view>
+                    <view class="card-course-content">谭英讲师（高校） | 北院实301 | 120分钟</view>
+                </view>
+            </view>
+        </view>
+        <view class="line-box">
+            <view class="line-left">
+                <view>
+                    <view class="point-time">14:30</view>
+                    <view class="point" style="background-color:{{mainColor}}"></view>
+                </view>
+            </view>
+            <view class="line-right">
+                <view class="card" style="margin:10rpx 30rpx">
+                    <view class="card-course-title">Java语言程序设计</view>
+                    <view class="card-course-content">谭英讲师（高校） | 北院实301 | 120分钟</view>
+                </view>
+            </view>
+        </view>
+        <view class="float-button-box">
+            <view class="float-button-border">
+                <view class="round-button" hover-class="round-button-hover">
+                    <text class="fa fa-angle-left fa-2x" style="color:{{mainColor}}"></text>
+                </view>
+            </view>
+            <view class="float-button-border">
+                <view class="round-button" hover-class="round-button-hover">
+                    <text class="fa fa-angle-right fa-2x" style="color:{{mainColor}}"></text>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+
+    <!-- 课程表 -->
+    <view class="content" scroll-y="true" wx:if="{{activeTab == 1}}">
+        <view class="table">
+            <view class="row0">
+                <view class="cell cell-head" wx:for="{{row0}}" wx:for-item="day">{{day}}
+                </view>
+            </view>
+            <scroll-view class="table-body" scroll-y="true">
+                <view class="row-body" wx:for="{{table}}" wx:for-item="row">
+                    <view class="cell cell-time" wx:for="{{row}}" wx:for-item="cell" wx:for-index="i" wx:if="{{i==0}}">
+                        {{cell}}</view>
+                    <view class="cell cell-course" wx:for="{{row}}" wx:for-item="cell" wx:for-index="i" wx:if="{{i!=0}}">
+                        <view class="{{cell == '' ? 'cell' : 'cell-radius'}}"
+                            style="background-color:{{cell == '' ? 'cell' : mainColor}};">{{cell}}</view>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="float-button-box">
+            <view class="float-button-border">
+                <view class="round-button" hover-class="round-button-hover">
+                    <text class="fa fa-sliders fa-2x" style="color:{{mainColor}}"></text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 我的 -->
+    <scroll-view class="content" scroll-y="true" wx:if="{{activeTab == 2}}">
+        <view class="card user-card" hover-class="menu-item-hover" bindtap="toPageUserInfo">
+            <image class="user-img" src="{{user.img}}"></image>
+            <view class="user-nick">{{user.nick}}</view>
+            <view class="user-info">{{user.info}}</view>
+        </view>
+
+        <view class="card" style="padding-left:0;padding-right:0;">
+            <view hover-class="menu-item-hover" bindtap="toPageTheme">
+                <view class="menu-item-left">主题</view>
+                <view class="menu-item-right" style="color:{{mainColor}}">
+                    <view style="display:inline-block;margin-right:20rpx">绿色</view>
+                    <text class="fa fa-angle-right fa-2x ico-gray"></text>
+                </view>
+            </view>
+            <view hover-class="menu-item-hover" bindtap="toPageScoreQuery">
+                <view class="menu-item-left">成绩查询</view>
+                <view class="menu-item-right">
+                    <text class="fa fa-angle-right fa-2x ico-gray"></text>
+                </view>
+            </view>
+            <view hover-class="menu-item-hover" bindtap="toPageTableManage">
+                <view class="menu-item-left">课表管理</view>
+                <view class="menu-item-right">
+                    <text class="fa fa-angle-right fa-2x ico-gray"></text>
+                </view>
+            </view>
+            <view hover-class="menu-item-hover" bindtap="toPageFeedback">
+                <view class="menu-item-left">帮助与反馈</view>
+                <view class="menu-item-right">
+                    <text class="fa fa-angle-right fa-2x ico-gray"></text>
+                </view>
+            </view>
+            <view hover-class="menu-item-hover" bindtap="toPageAbout">
+                <view class="menu-item-left">关于</view>
+                <view class="menu-item-right" style="color:gainsboro">
+                    <view style="display:inline-block;margin-right:20rpx">1.0.0</view>
+                    <text class="fa fa-angle-right fa-2x ico-gray"></text>
+                </view>
+            </view>
+            <view hover-class="menu-item-hover" bindtap="toPageSetting">
+                <view class="menu-item-left">设置</view>
+                <view class="menu-item-right">
+                    <text class="fa fa-angle-right fa-2x ico-gray"></text>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="button" hover-class="button-hover">
+            退出登录
+        </view>
+    </scroll-view>
+</view>

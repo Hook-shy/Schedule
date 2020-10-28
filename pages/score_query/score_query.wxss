@@ -1,0 +1,71 @@
+/* pages/score_query/score_query.wxss */
+.body {
+    background-color: #fafafa;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 0.8em;
+}
+
+.card {
+    margin:40rpx;
+    padding: 20rpx;
+    background-color: white;
+    border-radius: 15rpx;
+    box-shadow: -0 -0 20rpx 2rpx gainsboro;
+}
+
+.row{
+    flex-direction: row;
+    text-align: center;
+}
+
+.row-item{
+    display: inline-block;
+    width: 25%;
+    margin: 20rpx 0;
+}
+
+.card-title{
+    margin: 25rpx 30rpx;
+    padding-bottom: 5rpx;
+    font-size: 1em;
+    font-weight: bold;
+    flex-direction: row;
+}
+
+.card-title-left{
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+.card-title-right{
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+}
+
+.item-hover{
+    background-color: #fafafa;
+    border-radius: 15rpx;
+}
+
+.item-left {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+    text-align: left;
+    margin: 20rpx 0;
+    padding: 0 40rpx;
+}
+
+.item-right {
+    position: absolute;
+    display: inline-block;
+    right: 50rpx;
+    width: 40%;
+    vertical-align: middle;
+    text-align: right;
+    margin: 20rpx 0;
+    padding: 0 20rpx;
+}

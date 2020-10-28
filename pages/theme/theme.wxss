@@ -1,0 +1,33 @@
+/* pages/theme/theme.wxss */
+.body {
+    background-color: #fafafa;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.card {
+    margin:40rpx 20rpx 0 20rpx;
+    border-radius: 15rpx;
+    box-shadow: -0 -0 20rpx 2rpx gainsboro;
+}
+
+.item{
+    display: inline-block;
+    width: 250rpx;
+}
+
+.card-item{
+    height: 350rpx;
+}
+
+.info{
+    margin:5rpx 0 0 20rpx;
+}
+
+.icon{
+    position: relative;
+    left: 120rpx;
+    top: 270rpx;
+    width: 60rpx;
+    height: 60rpx;
+}
